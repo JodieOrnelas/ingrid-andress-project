@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.card-embed {
+  width: 100%;
+  max-height: 400px;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -20,17 +24,78 @@ body {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+.card {
+  color: black;
+  font-family: ;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 30px 0;
+  border-radius: 20px;
 }
 
+.card h4,
+h5 {
+  font-family: "Playfair Display", serif;
+}
+
+.card-body {
+  padding: 30px;
+}
+.card-header {
+  margin: 10px;
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #144428;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/img4.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.secondary h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.text-center {
+  text-align: center;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/img1.png);
@@ -90,10 +155,10 @@ main h2 {
   line-height: 20px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #462cb3;
+  color: #195030;
   padding: 2px 6px;
   gap: 10px;
-  background: rgba(136, 93, 241, 0.1);
+  background: rgba(65, 79, 75, 0.1);
   width: 170px;
   height: 24px;
 }
